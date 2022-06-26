@@ -1,0 +1,682 @@
+16 мая 2022 - 11:12:09.639 - c.c.y.YouTubeDemoApplication -  INFO  - Starting YouTubeDemoApplication using Java 17.0.2 on DESKTOP-TC4TSMS with PID 6752 (D:\Java Backend Development by PDP academy\PDP_offline_Java_Lessons\2. Spring Full\Lesson_100_YouTube_demo\target\classes started by white in D:\Java Backend Development by PDP academy\PDP_offline_Java_Lessons\2. Spring Full\Lesson_100_YouTube_demo)
+16 мая 2022 - 11:12:09.751 - c.c.y.YouTubeDemoApplication -  DEBUG - Running with Spring Boot v2.6.7, Spring v5.3.19
+16 мая 2022 - 11:12:09.752 - c.c.y.YouTubeDemoApplication -  INFO  - The following 1 profile is active: "dev"
+16 мая 2022 - 11:12:11.550 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16 мая 2022 - 11:12:11.687 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 119 ms. Found 6 JPA repository interfaces.
+16 мая 2022 - 11:12:12.633 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
+16 мая 2022 - 11:12:12.647 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+16 мая 2022 - 11:12:12.648 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.62]
+16 мая 2022 - 11:12:12.870 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+16 мая 2022 - 11:12:12.872 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 3037 ms
+16 мая 2022 - 11:12:12.971 - c.c.youtube_demo.config.JwtFilter -  DEBUG - Filter 'jwtFilter' configured for use
+16 мая 2022 - 11:12:13.225 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+16 мая 2022 - 11:12:13.326 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.8.Final
+16 мая 2022 - 11:12:13.650 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16 мая 2022 - 11:12:13.868 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+16 мая 2022 - 11:12:14.196 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+16 мая 2022 - 11:12:14.227 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+16 мая 2022 - 11:12:14.289 - Hibernate Types -  INFO  - This framework is proudly powered by:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ _    _                           _     _
+| |  | |                         (_)   | |
+| |__| |_   _ _ __   ___ _ __ ___ _ ___| |_ ___ _ __   ___ ___
+|  __  | | | | '_ \ / _ \ '__/ __| / __| __/ _ \ '_ \ / __/ _ \
+| |  | | |_| | |_) |  __/ |  \__ \ \__ \ ||  __/ | | | (_|  __/
+|_|  |_|\__, | .__/ \___|_|  |___/_|___/\__\___|_| |_|\___\___|
+         __/ | |
+        |___/|_|
+
+At Hypersistence, we only build amazing tools, like Hibernate Types, Flexy Pool, or Hypersistence Optimizer.
+
+What if there were a tool that could automatically detect JPA and Hibernate performance issues?
+
+Hypersistence Optimizer is that tool! For more details, go to: 
+
+https://vladmihalcea.com/hypersistence-optimizer/
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+16 мая 2022 - 11:12:14.911 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  ERROR - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: com.company.youtube_demo.entity.ChannelEntity column: banner_id (should be mapped with insert="false" update="false")
+16 мая 2022 - 11:12:14.913 - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -  WARN  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: com.company.youtube_demo.entity.ChannelEntity column: banner_id (should be mapped with insert="false" update="false")
+16 мая 2022 - 11:12:14.914 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+16 мая 2022 - 11:12:14.937 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+16 мая 2022 - 11:12:14.941 - o.a.catalina.core.StandardService -  INFO  - Stopping service [Tomcat]
+16 мая 2022 - 11:12:14.958 - o.s.b.a.l.ConditionEvaluationReportLoggingListener -  INFO  - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16 мая 2022 - 11:12:14.987 - o.s.boot.SpringApplication -  ERROR - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: com.company.youtube_demo.entity.ChannelEntity column: banner_id (should be mapped with insert="false" update="false")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.company.youtube_demo.YouTubeDemoApplication.main(YouTubeDemoApplication.java:10)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: com.company.youtube_demo.entity.ChannelEntity column: banner_id (should be mapped with insert="false" update="false")
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: com.company.youtube_demo.entity.ChannelEntity column: banner_id (should be mapped with insert="false" update="false")
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:895)
+	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:913)
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:935)
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:637)
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267)
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:359)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 20 common frames omitted
+16 мая 2022 - 11:15:23.773 - c.c.y.YouTubeDemoApplication -  INFO  - Starting YouTubeDemoApplication using Java 17.0.2 on DESKTOP-TC4TSMS with PID 1708 (D:\Java Backend Development by PDP academy\PDP_offline_Java_Lessons\2. Spring Full\Lesson_100_YouTube_demo\target\classes started by white in D:\Java Backend Development by PDP academy\PDP_offline_Java_Lessons\2. Spring Full\Lesson_100_YouTube_demo)
+16 мая 2022 - 11:15:23.785 - c.c.y.YouTubeDemoApplication -  DEBUG - Running with Spring Boot v2.6.7, Spring v5.3.19
+16 мая 2022 - 11:15:23.787 - c.c.y.YouTubeDemoApplication -  INFO  - The following 1 profile is active: "dev"
+16 мая 2022 - 11:15:24.972 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16 мая 2022 - 11:15:25.092 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 106 ms. Found 6 JPA repository interfaces.
+16 мая 2022 - 11:15:26.119 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
+16 мая 2022 - 11:15:26.138 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+16 мая 2022 - 11:15:26.139 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.62]
+16 мая 2022 - 11:15:26.323 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+16 мая 2022 - 11:15:26.323 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 2457 ms
+16 мая 2022 - 11:15:26.404 - c.c.youtube_demo.config.JwtFilter -  DEBUG - Filter 'jwtFilter' configured for use
+16 мая 2022 - 11:15:26.544 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+16 мая 2022 - 11:15:26.612 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.8.Final
+16 мая 2022 - 11:15:26.781 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16 мая 2022 - 11:15:27.023 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+16 мая 2022 - 11:15:27.383 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+16 мая 2022 - 11:15:27.412 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+16 мая 2022 - 11:15:27.470 - Hibernate Types -  INFO  - This framework is proudly powered by:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ _    _                           _     _
+| |  | |                         (_)   | |
+| |__| |_   _ _ __   ___ _ __ ___ _ ___| |_ ___ _ __   ___ ___
+|  __  | | | | '_ \ / _ \ '__/ __| / __| __/ _ \ '_ \ / __/ _ \
+| |  | | |_| | |_) |  __/ |  \__ \ \__ \ ||  __/ | | | (_|  __/
+|_|  |_|\__, | .__/ \___|_|  |___/_|___/\__\___|_| |_|\___\___|
+         __/ | |
+        |___/|_|
+
+At Hypersistence, we only build amazing tools, like Hibernate Types, Flexy Pool, or Hypersistence Optimizer.
+
+What if there were a tool that could automatically detect JPA and Hibernate performance issues?
+
+Hypersistence Optimizer is that tool! For more details, go to: 
+
+https://vladmihalcea.com/hypersistence-optimizer/
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+16 мая 2022 - 11:15:28.036 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  ERROR - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: com.company.youtube_demo.entity.ChannelEntity column: banner_id (should be mapped with insert="false" update="false")
+16 мая 2022 - 11:15:28.038 - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -  WARN  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: com.company.youtube_demo.entity.ChannelEntity column: banner_id (should be mapped with insert="false" update="false")
+16 мая 2022 - 11:15:28.039 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+16 мая 2022 - 11:15:28.074 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+16 мая 2022 - 11:15:28.077 - o.a.catalina.core.StandardService -  INFO  - Stopping service [Tomcat]
+16 мая 2022 - 11:15:28.092 - o.s.b.a.l.ConditionEvaluationReportLoggingListener -  INFO  - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16 мая 2022 - 11:15:28.129 - o.s.boot.SpringApplication -  ERROR - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: com.company.youtube_demo.entity.ChannelEntity column: banner_id (should be mapped with insert="false" update="false")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.company.youtube_demo.YouTubeDemoApplication.main(YouTubeDemoApplication.java:10)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: com.company.youtube_demo.entity.ChannelEntity column: banner_id (should be mapped with insert="false" update="false")
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: com.company.youtube_demo.entity.ChannelEntity column: banner_id (should be mapped with insert="false" update="false")
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:895)
+	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:913)
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:935)
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:637)
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267)
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:359)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 20 common frames omitted
+16 мая 2022 - 11:26:27.813 - c.c.y.YouTubeDemoApplication -  INFO  - Starting YouTubeDemoApplication using Java 17.0.2 on DESKTOP-TC4TSMS with PID 6764 (D:\Java Backend Development by PDP academy\PDP_offline_Java_Lessons\2. Spring Full\Lesson_100_YouTube_demo\target\classes started by white in D:\Java Backend Development by PDP academy\PDP_offline_Java_Lessons\2. Spring Full\Lesson_100_YouTube_demo)
+16 мая 2022 - 11:26:27.817 - c.c.y.YouTubeDemoApplication -  DEBUG - Running with Spring Boot v2.6.7, Spring v5.3.19
+16 мая 2022 - 11:26:27.818 - c.c.y.YouTubeDemoApplication -  INFO  - The following 1 profile is active: "dev"
+16 мая 2022 - 11:26:29.471 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16 мая 2022 - 11:26:29.580 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 95 ms. Found 6 JPA repository interfaces.
+16 мая 2022 - 11:26:30.614 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
+16 мая 2022 - 11:26:30.647 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+16 мая 2022 - 11:26:30.648 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.62]
+16 мая 2022 - 11:26:30.865 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+16 мая 2022 - 11:26:30.865 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 2948 ms
+16 мая 2022 - 11:26:30.932 - c.c.youtube_demo.config.JwtFilter -  DEBUG - Filter 'jwtFilter' configured for use
+16 мая 2022 - 11:26:31.055 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+16 мая 2022 - 11:26:31.106 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.8.Final
+16 мая 2022 - 11:26:31.248 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16 мая 2022 - 11:26:31.366 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+16 мая 2022 - 11:26:31.664 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+16 мая 2022 - 11:26:31.707 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+16 мая 2022 - 11:26:31.782 - Hibernate Types -  INFO  - This framework is proudly powered by:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ _    _                           _     _
+| |  | |                         (_)   | |
+| |__| |_   _ _ __   ___ _ __ ___ _ ___| |_ ___ _ __   ___ ___
+|  __  | | | | '_ \ / _ \ '__/ __| / __| __/ _ \ '_ \ / __/ _ \
+| |  | | |_| | |_) |  __/ |  \__ \ \__ \ ||  __/ | | | (_|  __/
+|_|  |_|\__, | .__/ \___|_|  |___/_|___/\__\___|_| |_|\___\___|
+         __/ | |
+        |___/|_|
+
+At Hypersistence, we only build amazing tools, like Hibernate Types, Flexy Pool, or Hypersistence Optimizer.
+
+What if there were a tool that could automatically detect JPA and Hibernate performance issues?
+
+Hypersistence Optimizer is that tool! For more details, go to: 
+
+https://vladmihalcea.com/hypersistence-optimizer/
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+16 мая 2022 - 11:26:32.577 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  ERROR - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: com.company.youtube_demo.entity.ChannelEntity column: banner_id (should be mapped with insert="false" update="false")
+16 мая 2022 - 11:26:32.579 - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -  WARN  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: com.company.youtube_demo.entity.ChannelEntity column: banner_id (should be mapped with insert="false" update="false")
+16 мая 2022 - 11:26:32.580 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+16 мая 2022 - 11:26:32.627 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+16 мая 2022 - 11:26:32.631 - o.a.catalina.core.StandardService -  INFO  - Stopping service [Tomcat]
+16 мая 2022 - 11:26:32.646 - o.s.b.a.l.ConditionEvaluationReportLoggingListener -  INFO  - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16 мая 2022 - 11:26:32.678 - o.s.boot.SpringApplication -  ERROR - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: com.company.youtube_demo.entity.ChannelEntity column: banner_id (should be mapped with insert="false" update="false")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.company.youtube_demo.YouTubeDemoApplication.main(YouTubeDemoApplication.java:10)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: com.company.youtube_demo.entity.ChannelEntity column: banner_id (should be mapped with insert="false" update="false")
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: com.company.youtube_demo.entity.ChannelEntity column: banner_id (should be mapped with insert="false" update="false")
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:895)
+	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:913)
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:935)
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:637)
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267)
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:359)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 20 common frames omitted
+16 мая 2022 - 11:31:46.684 - c.c.y.YouTubeDemoApplication -  INFO  - Starting YouTubeDemoApplication using Java 17.0.2 on DESKTOP-TC4TSMS with PID 14836 (D:\Java Backend Development by PDP academy\PDP_offline_Java_Lessons\2. Spring Full\Lesson_100_YouTube_demo\target\classes started by white in D:\Java Backend Development by PDP academy\PDP_offline_Java_Lessons\2. Spring Full\Lesson_100_YouTube_demo)
+16 мая 2022 - 11:31:46.694 - c.c.y.YouTubeDemoApplication -  DEBUG - Running with Spring Boot v2.6.7, Spring v5.3.19
+16 мая 2022 - 11:31:46.697 - c.c.y.YouTubeDemoApplication -  INFO  - The following 1 profile is active: "dev"
+16 мая 2022 - 11:31:48.593 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16 мая 2022 - 11:31:48.758 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 149 ms. Found 6 JPA repository interfaces.
+16 мая 2022 - 11:31:49.817 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
+16 мая 2022 - 11:31:49.837 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+16 мая 2022 - 11:31:49.838 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.62]
+16 мая 2022 - 11:31:50.055 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+16 мая 2022 - 11:31:50.056 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 3205 ms
+16 мая 2022 - 11:31:50.149 - c.c.youtube_demo.config.JwtFilter -  DEBUG - Filter 'jwtFilter' configured for use
+16 мая 2022 - 11:31:50.340 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+16 мая 2022 - 11:31:50.419 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.8.Final
+16 мая 2022 - 11:31:50.633 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16 мая 2022 - 11:31:50.789 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+16 мая 2022 - 11:31:51.111 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+16 мая 2022 - 11:31:51.144 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+16 мая 2022 - 11:31:51.211 - Hibernate Types -  INFO  - This framework is proudly powered by:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ _    _                           _     _
+| |  | |                         (_)   | |
+| |__| |_   _ _ __   ___ _ __ ___ _ ___| |_ ___ _ __   ___ ___
+|  __  | | | | '_ \ / _ \ '__/ __| / __| __/ _ \ '_ \ / __/ _ \
+| |  | | |_| | |_) |  __/ |  \__ \ \__ \ ||  __/ | | | (_|  __/
+|_|  |_|\__, | .__/ \___|_|  |___/_|___/\__\___|_| |_|\___\___|
+         __/ | |
+        |___/|_|
+
+At Hypersistence, we only build amazing tools, like Hibernate Types, Flexy Pool, or Hypersistence Optimizer.
+
+What if there were a tool that could automatically detect JPA and Hibernate performance issues?
+
+Hypersistence Optimizer is that tool! For more details, go to: 
+
+https://vladmihalcea.com/hypersistence-optimizer/
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+16 мая 2022 - 11:31:51.945 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  ERROR - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: com.company.youtube_demo.entity.ChannelEntity column: photo_id (should be mapped with insert="false" update="false")
+16 мая 2022 - 11:31:51.947 - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -  WARN  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: com.company.youtube_demo.entity.ChannelEntity column: photo_id (should be mapped with insert="false" update="false")
+16 мая 2022 - 11:31:51.950 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+16 мая 2022 - 11:31:52.023 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+16 мая 2022 - 11:31:52.028 - o.a.catalina.core.StandardService -  INFO  - Stopping service [Tomcat]
+16 мая 2022 - 11:31:52.054 - o.s.b.a.l.ConditionEvaluationReportLoggingListener -  INFO  - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16 мая 2022 - 11:31:52.106 - o.s.boot.SpringApplication -  ERROR - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: com.company.youtube_demo.entity.ChannelEntity column: photo_id (should be mapped with insert="false" update="false")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.company.youtube_demo.YouTubeDemoApplication.main(YouTubeDemoApplication.java:10)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for entity: com.company.youtube_demo.entity.ChannelEntity column: photo_id (should be mapped with insert="false" update="false")
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+Caused by: org.hibernate.MappingException: Repeated column in mapping for entity: com.company.youtube_demo.entity.ChannelEntity column: photo_id (should be mapped with insert="false" update="false")
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:895)
+	at org.hibernate.mapping.PersistentClass.checkPropertyColumnDuplication(PersistentClass.java:913)
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:935)
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:637)
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267)
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:359)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 20 common frames omitted
+16 мая 2022 - 11:33:08.587 - c.c.y.YouTubeDemoApplication -  INFO  - Starting YouTubeDemoApplication using Java 17.0.2 on DESKTOP-TC4TSMS with PID 16600 (D:\Java Backend Development by PDP academy\PDP_offline_Java_Lessons\2. Spring Full\Lesson_100_YouTube_demo\target\classes started by white in D:\Java Backend Development by PDP academy\PDP_offline_Java_Lessons\2. Spring Full\Lesson_100_YouTube_demo)
+16 мая 2022 - 11:33:08.591 - c.c.y.YouTubeDemoApplication -  DEBUG - Running with Spring Boot v2.6.7, Spring v5.3.19
+16 мая 2022 - 11:33:08.594 - c.c.y.YouTubeDemoApplication -  INFO  - The following 1 profile is active: "dev"
+16 мая 2022 - 11:33:10.421 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16 мая 2022 - 11:33:10.569 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 131 ms. Found 6 JPA repository interfaces.
+16 мая 2022 - 11:33:11.602 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
+16 мая 2022 - 11:33:11.618 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+16 мая 2022 - 11:33:11.619 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.62]
+16 мая 2022 - 11:33:11.849 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+16 мая 2022 - 11:33:11.849 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 3167 ms
+16 мая 2022 - 11:33:11.939 - c.c.youtube_demo.config.JwtFilter -  DEBUG - Filter 'jwtFilter' configured for use
+16 мая 2022 - 11:33:12.178 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+16 мая 2022 - 11:33:12.257 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.8.Final
+16 мая 2022 - 11:33:12.570 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16 мая 2022 - 11:33:12.739 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+16 мая 2022 - 11:33:13.064 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+16 мая 2022 - 11:33:13.102 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+16 мая 2022 - 11:33:13.165 - Hibernate Types -  INFO  - This framework is proudly powered by:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ _    _                           _     _
+| |  | |                         (_)   | |
+| |__| |_   _ _ __   ___ _ __ ___ _ ___| |_ ___ _ __   ___ ___
+|  __  | | | | '_ \ / _ \ '__/ __| / __| __/ _ \ '_ \ / __/ _ \
+| |  | | |_| | |_) |  __/ |  \__ \ \__ \ ||  __/ | | | (_|  __/
+|_|  |_|\__, | .__/ \___|_|  |___/_|___/\__\___|_| |_|\___\___|
+         __/ | |
+        |___/|_|
+
+At Hypersistence, we only build amazing tools, like Hibernate Types, Flexy Pool, or Hypersistence Optimizer.
+
+What if there were a tool that could automatically detect JPA and Hibernate performance issues?
+
+Hypersistence Optimizer is that tool! For more details, go to: 
+
+https://vladmihalcea.com/hypersistence-optimizer/
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+16 мая 2022 - 11:33:15.249 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16 мая 2022 - 11:33:15.270 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16 мая 2022 - 11:33:16.840 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -  WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16 мая 2022 - 11:33:17.128 - s.d.s.w.PropertySourcedRequestMappingHandlerMapping -  INFO  - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+16 мая 2022 - 11:33:17.722 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+16 мая 2022 - 11:33:17.723 - s.d.s.w.p.DocumentationPluginsBootstrapper -  INFO  - Context refreshed
+16 мая 2022 - 11:33:17.752 - s.d.s.w.p.DocumentationPluginsBootstrapper -  INFO  - Found 1 custom documentation plugin(s)
+16 мая 2022 - 11:33:17.838 - s.d.s.w.s.ApiListingReferenceScanner -  INFO  - Scanning for api listing references
+16 мая 2022 - 11:33:18.138 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: createUsingPOST_1
+16 мая 2022 - 11:33:18.173 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: createUsingPOST_2
+16 мая 2022 - 11:33:18.184 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: deleteUsingDELETE_1
+16 мая 2022 - 11:33:18.223 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: createUsingPOST_3
+16 мая 2022 - 11:33:18.232 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: deleteUsingDELETE_2
+16 мая 2022 - 11:33:18.287 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: createUsingPOST_4
+16 мая 2022 - 11:33:18.302 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: updateImageUsingPOST_1
+16 мая 2022 - 11:33:18.313 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: createUsingPOST_5
+16 мая 2022 - 11:33:18.320 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: deleteUsingDELETE_3
+16 мая 2022 - 11:33:18.326 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: getListUsingGET_1
+16 мая 2022 - 11:33:18.333 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: updateUsingPUT_1
+16 мая 2022 - 11:33:18.377 - c.c.y.YouTubeDemoApplication -  INFO  - Started YouTubeDemoApplication in 10.54 seconds (JVM running for 12.24)
+16 мая 2022 - 11:38:09.041 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16 мая 2022 - 11:38:09.042 - o.s.web.servlet.DispatcherServlet -  INFO  - Initializing Servlet 'dispatcherServlet'
+16 мая 2022 - 11:38:09.045 - o.s.web.servlet.DispatcherServlet -  INFO  - Completed initialization in 3 ms
+16 мая 2022 - 11:41:05.286 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+16 мая 2022 - 11:41:05.288 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+16 мая 2022 - 11:41:05.297 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+16 мая 2022 - 11:41:12.912 - c.c.y.YouTubeDemoApplication -  INFO  - Starting YouTubeDemoApplication using Java 17.0.2 on DESKTOP-TC4TSMS with PID 16504 (D:\Java Backend Development by PDP academy\PDP_offline_Java_Lessons\2. Spring Full\Lesson_100_YouTube_demo\target\classes started by white in D:\Java Backend Development by PDP academy\PDP_offline_Java_Lessons\2. Spring Full\Lesson_100_YouTube_demo)
+16 мая 2022 - 11:41:12.916 - c.c.y.YouTubeDemoApplication -  DEBUG - Running with Spring Boot v2.6.7, Spring v5.3.19
+16 мая 2022 - 11:41:12.917 - c.c.y.YouTubeDemoApplication -  INFO  - The following 1 profile is active: "dev"
+16 мая 2022 - 11:41:14.558 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16 мая 2022 - 11:41:14.678 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 96 ms. Found 6 JPA repository interfaces.
+16 мая 2022 - 11:41:15.505 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
+16 мая 2022 - 11:41:15.516 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+16 мая 2022 - 11:41:15.517 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.62]
+16 мая 2022 - 11:41:15.667 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+16 мая 2022 - 11:41:15.668 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 2668 ms
+16 мая 2022 - 11:41:15.735 - c.c.youtube_demo.config.JwtFilter -  DEBUG - Filter 'jwtFilter' configured for use
+16 мая 2022 - 11:41:15.872 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+16 мая 2022 - 11:41:15.924 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.8.Final
+16 мая 2022 - 11:41:16.084 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16 мая 2022 - 11:41:16.195 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+16 мая 2022 - 11:41:16.445 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+16 мая 2022 - 11:41:16.472 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+16 мая 2022 - 11:41:16.524 - Hibernate Types -  INFO  - This framework is proudly powered by:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ _    _                           _     _
+| |  | |                         (_)   | |
+| |__| |_   _ _ __   ___ _ __ ___ _ ___| |_ ___ _ __   ___ ___
+|  __  | | | | '_ \ / _ \ '__/ __| / __| __/ _ \ '_ \ / __/ _ \
+| |  | | |_| | |_) |  __/ |  \__ \ \__ \ ||  __/ | | | (_|  __/
+|_|  |_|\__, | .__/ \___|_|  |___/_|___/\__\___|_| |_|\___\___|
+         __/ | |
+        |___/|_|
+
+At Hypersistence, we only build amazing tools, like Hibernate Types, Flexy Pool, or Hypersistence Optimizer.
+
+What if there were a tool that could automatically detect JPA and Hibernate performance issues?
+
+Hypersistence Optimizer is that tool! For more details, go to: 
+
+https://vladmihalcea.com/hypersistence-optimizer/
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+16 мая 2022 - 11:41:17.976 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16 мая 2022 - 11:41:17.987 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16 мая 2022 - 11:41:19.120 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -  WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16 мая 2022 - 11:41:19.334 - s.d.s.w.PropertySourcedRequestMappingHandlerMapping -  INFO  - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+16 мая 2022 - 11:41:19.776 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+16 мая 2022 - 11:41:19.781 - s.d.s.w.p.DocumentationPluginsBootstrapper -  INFO  - Context refreshed
+16 мая 2022 - 11:41:19.818 - s.d.s.w.p.DocumentationPluginsBootstrapper -  INFO  - Found 1 custom documentation plugin(s)
+16 мая 2022 - 11:41:19.900 - s.d.s.w.s.ApiListingReferenceScanner -  INFO  - Scanning for api listing references
+16 мая 2022 - 11:41:20.198 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: createUsingPOST_1
+16 мая 2022 - 11:41:20.224 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: createUsingPOST_2
+16 мая 2022 - 11:41:20.230 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: deleteUsingDELETE_1
+16 мая 2022 - 11:41:20.260 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: createUsingPOST_3
+16 мая 2022 - 11:41:20.267 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: deleteUsingDELETE_2
+16 мая 2022 - 11:41:20.315 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: createUsingPOST_4
+16 мая 2022 - 11:41:20.328 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: updateImageUsingPOST_1
+16 мая 2022 - 11:41:20.336 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: createUsingPOST_5
+16 мая 2022 - 11:41:20.341 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: deleteUsingDELETE_3
+16 мая 2022 - 11:41:20.346 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: getListUsingGET_1
+16 мая 2022 - 11:41:20.352 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: updateUsingPUT_1
+16 мая 2022 - 11:41:20.378 - c.c.y.YouTubeDemoApplication -  INFO  - Started YouTubeDemoApplication in 8.132 seconds (JVM running for 9.451)
+16 мая 2022 - 11:41:56.112 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16 мая 2022 - 11:41:56.112 - o.s.web.servlet.DispatcherServlet -  INFO  - Initializing Servlet 'dispatcherServlet'
+16 мая 2022 - 11:41:56.115 - o.s.web.servlet.DispatcherServlet -  INFO  - Completed initialization in 3 ms
+16 мая 2022 - 11:45:04.953 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+16 мая 2022 - 11:45:04.956 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+16 мая 2022 - 11:45:04.964 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+16 мая 2022 - 11:45:15.482 - c.c.y.YouTubeDemoApplication -  INFO  - Starting YouTubeDemoApplication using Java 17.0.2 on DESKTOP-TC4TSMS with PID 12428 (D:\Java Backend Development by PDP academy\PDP_offline_Java_Lessons\2. Spring Full\Lesson_100_YouTube_demo\target\classes started by white in D:\Java Backend Development by PDP academy\PDP_offline_Java_Lessons\2. Spring Full\Lesson_100_YouTube_demo)
+16 мая 2022 - 11:45:15.486 - c.c.y.YouTubeDemoApplication -  DEBUG - Running with Spring Boot v2.6.7, Spring v5.3.19
+16 мая 2022 - 11:45:15.487 - c.c.y.YouTubeDemoApplication -  INFO  - The following 1 profile is active: "dev"
+16 мая 2022 - 11:45:17.820 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16 мая 2022 - 11:45:18.009 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 173 ms. Found 6 JPA repository interfaces.
+16 мая 2022 - 11:45:19.590 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
+16 мая 2022 - 11:45:19.611 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+16 мая 2022 - 11:45:19.611 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.62]
+16 мая 2022 - 11:45:19.884 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+16 мая 2022 - 11:45:19.885 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 4321 ms
+16 мая 2022 - 11:45:19.985 - c.c.youtube_demo.config.JwtFilter -  DEBUG - Filter 'jwtFilter' configured for use
+16 мая 2022 - 11:45:20.234 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+16 мая 2022 - 11:45:20.313 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.8.Final
+16 мая 2022 - 11:45:20.593 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16 мая 2022 - 11:45:20.820 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+16 мая 2022 - 11:45:21.198 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+16 мая 2022 - 11:45:21.234 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+16 мая 2022 - 11:45:21.297 - Hibernate Types -  INFO  - This framework is proudly powered by:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ _    _                           _     _
+| |  | |                         (_)   | |
+| |__| |_   _ _ __   ___ _ __ ___ _ ___| |_ ___ _ __   ___ ___
+|  __  | | | | '_ \ / _ \ '__/ __| / __| __/ _ \ '_ \ / __/ _ \
+| |  | | |_| | |_) |  __/ |  \__ \ \__ \ ||  __/ | | | (_|  __/
+|_|  |_|\__, | .__/ \___|_|  |___/_|___/\__\___|_| |_|\___\___|
+         __/ | |
+        |___/|_|
+
+At Hypersistence, we only build amazing tools, like Hibernate Types, Flexy Pool, or Hypersistence Optimizer.
+
+What if there were a tool that could automatically detect JPA and Hibernate performance issues?
+
+Hypersistence Optimizer is that tool! For more details, go to: 
+
+https://vladmihalcea.com/hypersistence-optimizer/
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+16 мая 2022 - 11:45:22.616 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16 мая 2022 - 11:45:22.629 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16 мая 2022 - 11:45:23.820 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -  WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16 мая 2022 - 11:45:23.987 - s.d.s.w.PropertySourcedRequestMappingHandlerMapping -  INFO  - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+16 мая 2022 - 11:45:24.380 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+16 мая 2022 - 11:45:24.381 - s.d.s.w.p.DocumentationPluginsBootstrapper -  INFO  - Context refreshed
+16 мая 2022 - 11:45:24.400 - s.d.s.w.p.DocumentationPluginsBootstrapper -  INFO  - Found 1 custom documentation plugin(s)
+16 мая 2022 - 11:45:24.460 - s.d.s.w.s.ApiListingReferenceScanner -  INFO  - Scanning for api listing references
+16 мая 2022 - 11:45:24.655 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: createUsingPOST_1
+16 мая 2022 - 11:45:24.677 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: createUsingPOST_2
+16 мая 2022 - 11:45:24.683 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: deleteUsingDELETE_1
+16 мая 2022 - 11:45:24.710 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: createUsingPOST_3
+16 мая 2022 - 11:45:24.716 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: deleteUsingDELETE_2
+16 мая 2022 - 11:45:24.752 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: createUsingPOST_4
+16 мая 2022 - 11:45:24.762 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: updateImageUsingPOST_1
+16 мая 2022 - 11:45:24.769 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: createUsingPOST_5
+16 мая 2022 - 11:45:24.774 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: deleteUsingDELETE_3
+16 мая 2022 - 11:45:24.778 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: getListUsingGET_1
+16 мая 2022 - 11:45:24.783 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: updateUsingPUT_1
+16 мая 2022 - 11:45:24.810 - c.c.y.YouTubeDemoApplication -  INFO  - Started YouTubeDemoApplication in 10.001 seconds (JVM running for 11.341)
+16 мая 2022 - 11:45:45.293 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16 мая 2022 - 11:45:45.293 - o.s.web.servlet.DispatcherServlet -  INFO  - Initializing Servlet 'dispatcherServlet'
+16 мая 2022 - 11:45:45.294 - o.s.web.servlet.DispatcherServlet -  INFO  - Completed initialization in 1 ms
+16 мая 2022 - 11:48:29.761 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+16 мая 2022 - 11:48:29.765 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+16 мая 2022 - 11:48:29.775 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+16 мая 2022 - 18:38:12.133 - c.c.y.YouTubeDemoApplication -  INFO  - Starting YouTubeDemoApplication using Java 17.0.2 on DESKTOP-TC4TSMS with PID 17848 (D:\Java Backend Development by PDP academy\PDP_offline_Java_Lessons\2. Spring Full\Lesson_100_YouTube_demo\target\classes started by white in D:\Java Backend Development by PDP academy\PDP_offline_Java_Lessons\2. Spring Full\Lesson_100_YouTube_demo)
+16 мая 2022 - 18:38:12.137 - c.c.y.YouTubeDemoApplication -  DEBUG - Running with Spring Boot v2.6.7, Spring v5.3.19
+16 мая 2022 - 18:38:12.138 - c.c.y.YouTubeDemoApplication -  INFO  - The following 1 profile is active: "dev"
+16 мая 2022 - 18:38:15.374 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16 мая 2022 - 18:38:15.561 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 145 ms. Found 6 JPA repository interfaces.
+16 мая 2022 - 18:38:16.777 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
+16 мая 2022 - 18:38:16.794 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+16 мая 2022 - 18:38:16.794 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.62]
+16 мая 2022 - 18:38:16.980 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+16 мая 2022 - 18:38:16.980 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 4708 ms
+16 мая 2022 - 18:38:17.130 - c.c.youtube_demo.config.JwtFilter -  DEBUG - Filter 'jwtFilter' configured for use
+16 мая 2022 - 18:38:17.280 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+16 мая 2022 - 18:38:17.362 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.8.Final
+16 мая 2022 - 18:38:17.561 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16 мая 2022 - 18:38:17.717 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+16 мая 2022 - 18:38:18.042 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+16 мая 2022 - 18:38:18.075 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+16 мая 2022 - 18:38:18.137 - Hibernate Types -  INFO  - This framework is proudly powered by:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ _    _                           _     _
+| |  | |                         (_)   | |
+| |__| |_   _ _ __   ___ _ __ ___ _ ___| |_ ___ _ __   ___ ___
+|  __  | | | | '_ \ / _ \ '__/ __| / __| __/ _ \ '_ \ / __/ _ \
+| |  | | |_| | |_) |  __/ |  \__ \ \__ \ ||  __/ | | | (_|  __/
+|_|  |_|\__, | .__/ \___|_|  |___/_|___/\__\___|_| |_|\___\___|
+         __/ | |
+        |___/|_|
+
+At Hypersistence, we only build amazing tools, like Hibernate Types, Flexy Pool, or Hypersistence Optimizer.
+
+What if there were a tool that could automatically detect JPA and Hibernate performance issues?
+
+Hypersistence Optimizer is that tool! For more details, go to: 
+
+https://vladmihalcea.com/hypersistence-optimizer/
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+16 мая 2022 - 18:38:19.650 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16 мая 2022 - 18:38:19.660 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16 мая 2022 - 18:38:20.860 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -  WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16 мая 2022 - 18:38:21.196 - s.d.s.w.PropertySourcedRequestMappingHandlerMapping -  INFO  - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+16 мая 2022 - 18:38:21.759 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+16 мая 2022 - 18:38:21.760 - s.d.s.w.p.DocumentationPluginsBootstrapper -  INFO  - Context refreshed
+16 мая 2022 - 18:38:21.783 - s.d.s.w.p.DocumentationPluginsBootstrapper -  INFO  - Found 1 custom documentation plugin(s)
+16 мая 2022 - 18:38:21.847 - s.d.s.w.s.ApiListingReferenceScanner -  INFO  - Scanning for api listing references
+16 мая 2022 - 18:38:22.102 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: createUsingPOST_1
+16 мая 2022 - 18:38:22.136 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: createUsingPOST_2
+16 мая 2022 - 18:38:22.145 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: deleteUsingDELETE_1
+16 мая 2022 - 18:38:22.181 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: createUsingPOST_3
+16 мая 2022 - 18:38:22.193 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: deleteUsingDELETE_2
+16 мая 2022 - 18:38:22.247 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: createUsingPOST_4
+16 мая 2022 - 18:38:22.261 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: updateImageUsingPOST_1
+16 мая 2022 - 18:38:22.269 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: createUsingPOST_5
+16 мая 2022 - 18:38:22.287 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: deleteUsingDELETE_3
+16 мая 2022 - 18:38:22.294 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: getListUsingGET_1
+16 мая 2022 - 18:38:22.299 - s.d.s.w.r.o.CachingOperationNameGenerator -  INFO  - Generating unique operation named: updateUsingPUT_1
+16 мая 2022 - 18:38:22.334 - c.c.y.YouTubeDemoApplication -  INFO  - Started YouTubeDemoApplication in 12.242 seconds (JVM running for 14.283)
+16 ��� 2022 - 18:41:25.015 - c.c.y.YouTubeDemoApplicationTests -  INFO  - Starting YouTubeDemoApplicationTests using Java 17.0.2 on DESKTOP-TC4TSMS with PID 7284 (started by white in D:\Java Backend Development by PDP academy\PDP_offline_Java_Lessons\2. Spring Full\Lesson_100_YouTube_demo)
+16 ��� 2022 - 18:41:25.021 - c.c.y.YouTubeDemoApplicationTests -  DEBUG - Running with Spring Boot v2.6.7, Spring v5.3.19
+16 ��� 2022 - 18:41:25.022 - c.c.y.YouTubeDemoApplicationTests -  INFO  - The following 1 profile is active: "dev"
+16 ��� 2022 - 18:41:27.634 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16 ��� 2022 - 18:41:27.854 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 190 ms. Found 6 JPA repository interfaces.
+16 ��� 2022 - 18:41:29.955 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+16 ��� 2022 - 18:41:30.087 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.8.Final
+16 ��� 2022 - 18:41:30.474 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16 ��� 2022 - 18:41:30.941 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+16 ��� 2022 - 18:41:31.609 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+16 ��� 2022 - 18:41:31.710 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+16 ��� 2022 - 18:41:31.836 - Hibernate Types -  INFO  - This framework is proudly powered by:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ _    _                           _     _
+| |  | |                         (_)   | |
+| |__| |_   _ _ __   ___ _ __ ___ _ ___| |_ ___ _ __   ___ ___
+|  __  | | | | '_ \ / _ \ '__/ __| / __| __/ _ \ '_ \ / __/ _ \
+| |  | | |_| | |_) |  __/ |  \__ \ \__ \ ||  __/ | | | (_|  __/
+|_|  |_|\__, | .__/ \___|_|  |___/_|___/\__\___|_| |_|\___\___|
+         __/ | |
+        |___/|_|
+
+At Hypersistence, we only build amazing tools, like Hibernate Types, Flexy Pool, or Hypersistence Optimizer.
+
+What if there were a tool that could automatically detect JPA and Hibernate performance issues?
+
+Hypersistence Optimizer is that tool! For more details, go to: 
+
+https://vladmihalcea.com/hypersistence-optimizer/
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+16 ��� 2022 - 18:41:34.223 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16 ��� 2022 - 18:41:34.237 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16 ��� 2022 - 18:41:37.489 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -  WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16 ��� 2022 - 18:41:41.471 - c.c.y.YouTubeDemoApplicationTests -  INFO  - Started YouTubeDemoApplicationTests in 17.465 seconds (JVM running for 19.681)
+16 ��� 2022 - 18:41:42.378 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+16 ��� 2022 - 18:41:42.384 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+16 ��� 2022 - 18:41:42.406 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+16 мая 2022 - 18:42:23.104 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+16 мая 2022 - 18:42:23.108 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+16 мая 2022 - 18:42:23.119 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+16 мая 2022 - 18:43:35.846 - c.c.y.YouTubeDemoApplication -  INFO  - Starting YouTubeDemoApplication using Java 17.0.2 on DESKTOP-TC4TSMS with PID 17396 (D:\Java Backend Development by PDP academy\PDP_offline_Java_Lessons\2. Spring Full\Lesson_100_YouTube_demo\target\classes started by white in D:\Java Backend Development by PDP academy\PDP_offline_Java_Lessons\2. Spring Full\Lesson_100_YouTube_demo)
+16 мая 2022 - 18:43:35.849 - c.c.y.YouTubeDemoApplication -  DEBUG - Running with Spring Boot v2.6.7, Spring v5.3.19
+16 мая 2022 - 18:43:35.850 - c.c.y.YouTubeDemoApplication -  INFO  - The following 1 profile is active: "dev"
+16 мая 2022 - 18:43:37.674 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16 мая 2022 - 18:43:37.769 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 81 ms. Found 6 JPA repository interfaces.
+16 мая 2022 - 18:43:38.542 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
+16 мая 2022 - 18:43:38.558 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+16 мая 2022 - 18:43:38.559 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.62]
+16 мая 2022 - 18:43:38.775 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+16 мая 2022 - 18:43:38.776 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 2851 ms
+16 мая 2022 - 18:43:38.861 - c.c.youtube_demo.config.JwtFilter -  DEBUG - Filter 'jwtFilter' configured for use
+16 мая 2022 - 18:43:38.973 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+16 мая 2022 - 18:43:39.029 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.8.Final
+16 мая 2022 - 18:43:39.183 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16 мая 2022 - 18:43:39.356 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+16 мая 2022 - 18:43:39.634 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+16 мая 2022 - 18:43:39.663 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+16 мая 2022 - 18:43:39.714 - Hibernate Types -  INFO  - This framework is proudly powered by:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ _    _                           _     _
+| |  | |                         (_)   | |
+| |__| |_   _ _ __   ___ _ __ ___ _ ___| |_ ___ _ __   ___ ___
+|  __  | | | | '_ \ / _ \ '__/ __| / __| __/ _ \ '_ \ / __/ _ \
+| |  | | |_| | |_) |  __/ |  \__ \ \__ \ ||  __/ | | | (_|  __/
+|_|  |_|\__, | .__/ \___|_|  |___/_|___/\__\___|_| |_|\___\___|
+         __/ | |
+        |___/|_|
+
+At Hypersistence, we only build amazing tools, like Hibernate Types, Flexy Pool, or Hypersistence Optimizer.
+
+What if there were a tool that could automatically detect JPA and Hibernate performance issues?
+
+Hypersistence Optimizer is that tool! For more details, go to: 
+
+https://vladmihalcea.com/hypersistence-optimizer/
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+16 мая 2022 - 18:43:41.395 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16 мая 2022 - 18:43:41.410 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16 мая 2022 - 18:43:43.913 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -  WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16 мая 2022 - 18:43:44.638 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+16 мая 2022 - 18:43:45.625 - c.c.y.YouTubeDemoApplication -  INFO  - Started YouTubeDemoApplication in 10.518 seconds (JVM running for 11.941)
+16 мая 2022 - 18:44:05.484 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16 мая 2022 - 18:44:05.486 - o.s.web.servlet.DispatcherServlet -  INFO  - Initializing Servlet 'dispatcherServlet'
+16 мая 2022 - 18:44:05.493 - o.s.web.servlet.DispatcherServlet -  INFO  - Completed initialization in 7 ms

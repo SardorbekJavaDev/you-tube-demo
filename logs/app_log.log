@@ -1,0 +1,21 @@
+11 мая 2022 - 16:18:06.103 - c.c.y.YouTubeDemoApplication -  INFO  - Starting YouTubeDemoApplication using Java 17.0.2 on DESKTOP-TC4TSMS with PID 10664 (D:\Java Backend Development by PDP academy\PDP_online_Lessons\Module_4\Lesson_2\YouTube_demo\target\classes started by white in D:\Java Backend Development by PDP academy\PDP_online_Lessons\Module_4\Lesson_2\YouTube_demo)
+11 мая 2022 - 16:18:06.107 - c.c.y.YouTubeDemoApplication -  DEBUG - Running with Spring Boot v2.6.7, Spring v5.3.19
+11 мая 2022 - 16:18:06.108 - c.c.y.YouTubeDemoApplication -  INFO  - The following 1 profile is active: "dev"
+11 мая 2022 - 16:18:07.225 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11 мая 2022 - 16:18:07.254 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+11 мая 2022 - 16:18:08.192 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8080 (http)
+11 мая 2022 - 16:18:08.205 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+11 мая 2022 - 16:18:08.205 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.62]
+11 мая 2022 - 16:18:08.447 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+11 мая 2022 - 16:18:08.448 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 2249 ms
+11 мая 2022 - 16:18:08.658 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+11 мая 2022 - 16:18:08.743 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.8.Final
+11 мая 2022 - 16:18:08.968 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+11 мая 2022 - 16:18:09.083 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+11 мая 2022 - 16:18:09.538 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+11 мая 2022 - 16:18:09.575 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+11 мая 2022 - 16:18:09.947 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11 мая 2022 - 16:18:09.963 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11 мая 2022 - 16:18:10.054 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -  WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11 мая 2022 - 16:18:10.745 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+11 мая 2022 - 16:18:10.773 - c.c.y.YouTubeDemoApplication -  INFO  - Started YouTubeDemoApplication in 5.328 seconds (JVM running for 6.481)
