@@ -1,0 +1,30 @@
+### Login
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "email": "alish@gmail.com",
+  "password": "12345678"
+}
+
+### Registration 1
+POST http://localhost:8080/registration
+Content-Type: application/json
+
+{
+  "name": "Ali",
+  "surname": "Aliyev",
+  "email": "alish@gmail.com",
+  "password": "12345678"
+}
+
+### Registration 2
+POST http://localhost:8080/registration
+Content-Type: application/json
+
+{
+  "name": "Toshmat",
+  "surname": "Toshmatov",
+  "email": "Toshmat@gmail.com",
+  "password": "12345678"
+}

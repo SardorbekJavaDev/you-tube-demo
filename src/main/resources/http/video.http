@@ -1,0 +1,64 @@
+### Get
+GET http://localhost:8080/video/public/6d5fe8a3-6474-4bf4-ba36-10f777fe2a72
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyNTM5ZDQzOS1lZmRlLTRhZmItOTkyNy1jOTliNGVhNGE3YzEiLCJpYXQiOjE2NTI5MDE3MzksImV4cCI6MTY1MjkwNTMzOSwiaXNzIjoibWF6Z2kgcHJvZHVjdGlvbiIsInJvbGUiOiJBRE1JTiJ9.KDM9if_-SrX79RHyBXGyJQjczFvDGggDRTQlZ07p_Y8
+
+### Create
+POST http://localhost:8080/video/public
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyNTM5ZDQzOS1lZmRlLTRhZmItOTkyNy1jOTliNGVhNGE3YzEiLCJpYXQiOjE2NTI4NzY4MDYsImV4cCI6MTY1Mjg4MDQwNiwiaXNzIjoibWF6Z2kgcHJvZHVjdGlvbiIsInJvbGUiOiJBRE1JTiJ9.FYNcp4F-uavcPu6fZcWBx6Yz2aKDG9C30eXb2AlyWvQ
+
+{
+  "title": "Weather",
+  "videoId": "fce6b2e4-cdcc-4979-9ec5-7f852794f82e",
+  "type": "SHORT",
+  "categoryId": "287942ab-cb73-4d8f-8e1f-caa24c5192f3",
+  "description": "",
+  "channelId": "9c66c05c-8ba1-4609-876a-4446a8243ab4"
+}
+
+### Update About
+PUT http://localhost:8080/video/public/db3db46c-38f5-45ee-aca3-42a394d9d0f0
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyNTM5ZDQzOS1lZmRlLTRhZmItOTkyNy1jOTliNGVhNGE3YzEiLCJpYXQiOjE2NTI4NzI5OTcsImV4cCI6MTY1Mjg3NjU5NywiaXNzIjoibWF6Z2kgcHJvZHVjdGlvbiIsInJvbGUiOiJBRE1JTiJ9.Zx2EwTKpz7tBGhq_-nz747Z8S2zMsX0tnQpxHonB_Nc
+
+{
+  "title": "HTML",
+  "description": "Test"
+}
+
+### Search
+GET http://localhost:8080/video/search?search=HTML
+
+### Update Preview Photo
+PUT http://localhost:8080/video/public/preview-photo/6d5fe8a3-6474-4bf4-ba36-10f777fe2a72
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyNTM5ZDQzOS1lZmRlLTRhZmItOTkyNy1jOTliNGVhNGE3YzEiLCJpYXQiOjE2NTI4NzY4MDYsImV4cCI6MTY1Mjg4MDQwNiwiaXNzIjoibWF6Z2kgcHJvZHVjdGlvbiIsInJvbGUiOiJBRE1JTiJ9.FYNcp4F-uavcPu6fZcWBx6Yz2aKDG9C30eXb2AlyWvQ
+
+{
+  "photoId": "d9b998b5-c421-4cc6-998a-722066223a2e"
+}
+
+### Change Status
+PUT http://localhost:8080/video/public/status/db3db46c-38f5-45ee-aca3-42a394d9d0f0
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyNTM5ZDQzOS1lZmRlLTRhZmItOTkyNy1jOTliNGVhNGE3YzEiLCJpYXQiOjE2NTI4NzI5OTcsImV4cCI6MTY1Mjg3NjU5NywiaXNzIjoibWF6Z2kgcHJvZHVjdGlvbiIsInJvbGUiOiJBRE1JTiJ9.Zx2EwTKpz7tBGhq_-nz747Z8S2zMsX0tnQpxHonB_Nc
+
+### Delete
+DELETE http://localhost:8080/video/public/029fef8c-772d-4b43-882d-8e378f7d60eb/delete
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyNTM5ZDQzOS1lZmRlLTRhZmItOTkyNy1jOTliNGVhNGE3YzEiLCJpYXQiOjE2NTI4NzI5OTcsImV4cCI6MTY1Mjg3NjU5NywiaXNzIjoibWF6Z2kgcHJvZHVjdGlvbiIsInJvbGUiOiJBRE1JTiJ9.Zx2EwTKpz7tBGhq_-nz747Z8S2zMsX0tnQpxHonB_Nc
+
+
+### Increase View
+PUT http://localhost:8080/video/view/db3db46c-38f5-45ee-aca3-42a394d9d0f0
+
+### List By Category
+GET http://localhost:8080/video/category/287942ab-cb73-4d8f-8e1f-caa24c5192f3
+
+### List By Channel
+GET http://localhost:8080/video/channel/9c66c05c-8ba1-4609-876a-4446a8243ab4
+
+### List
+GET http://localhost:8080/video/adm/list
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyNTM5ZDQzOS1lZmRlLTRhZmItOTkyNy1jOTliNGVhNGE3YzEiLCJpYXQiOjE2NTI4NzI5OTcsImV4cCI6MTY1Mjg3NjU5NywiaXNzIjoibWF6Z2kgcHJvZHVjdGlvbiIsInJvbGUiOiJBRE1JTiJ9.Zx2EwTKpz7tBGhq_-nz747Z8S2zMsX0tnQpxHonB_Nc
+
+
+

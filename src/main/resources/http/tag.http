@@ -1,0 +1,23 @@
+### Create
+POST http://localhost:8080/tag/public
+Content-Type: application/json
+
+{
+  "name": "Tag5"
+}
+
+### Update
+PUT http://localhost:8080/tag/adm/2769bf2e-34a2-4d45-b5fa-015e9b2d8076
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyNTM5ZDQzOS1lZmRlLTRhZmItOTkyNy1jOTliNGVhNGE3YzEiLCJpYXQiOjE2NTI1NTYwMjEsImV4cCI6MTY1MjU1OTYyMSwiaXNzIjoibWF6Z2kgcHJvZHVjdGlvbiIsInJvbGUiOiJBRE1JTiJ9.-3sRRohi1_bLiRs8PPhgOiUda9Bd4uR5m1O_b4TvLAk
+
+{
+  "name": "18+"
+}
+
+### Delete
+DELETE http://localhost:8080/tag/adm/2769bf2e-34a2-4d45-b5fa-015e9b2d8076/delete
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyNTM5ZDQzOS1lZmRlLTRhZmItOTkyNy1jOTliNGVhNGE3YzEiLCJpYXQiOjE2NTI1NTYwMjEsImV4cCI6MTY1MjU1OTYyMSwiaXNzIjoibWF6Z2kgcHJvZHVjdGlvbiIsInJvbGUiOiJBRE1JTiJ9.-3sRRohi1_bLiRs8PPhgOiUda9Bd4uR5m1O_b4TvLAk
+
+### List
+GET http://localhost:8080/tag/public

@@ -1,0 +1,63 @@
+### Get by id
+GET http://localhost:8080/profile/2539d439-efde-4afb-9927-c99b4ea4a7c1
+
+### Update
+PUT http://localhost:8080/profile/public
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyNTM5ZDQzOS1lZmRlLTRhZmItOTkyNy1jOTliNGVhNGE3YzEiLCJpYXQiOjE2NTI1NTMxOTIsImV4cCI6MTY1MjU1Njc5MiwiaXNzIjoibWF6Z2kgcHJvZHVjdGlvbiIsInJvbGUiOiJVU0VSIn0.ABpZrSVk-EVxYWp4RDZwLazKFWCFS95djY6GLRIJx7Y
+
+{
+  "name": "Javlonbek",
+  "surname": "Abduraxmonov"
+}
+
+### Image
+PUT http://localhost:8080/profile/public/image
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwODNjZTAxYi00NDNjLTRmNzUtOGNkMC0yNjE1MzY2Njg2YjEiLCJpYXQiOjE2NTI5NDExMjAsImV4cCI6MTY1Mjk0NDcyMCwiaXNzIjoibWF6Z2kgcHJvZHVjdGlvbiIsInJvbGUiOiJVU0VSIn0.2XdqENEAP_GxYRYwuXsNm5m5OZ0W8DcKHDrmI7XvTxI
+
+{
+  "id": "a460f06e-18a2-41c4-a3af-d3a9e63325df"
+}
+
+### Email Reset
+PUT http://localhost:8080/profile/public/email
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyNTM5ZDQzOS1lZmRlLTRhZmItOTkyNy1jOTliNGVhNGE3YzEiLCJpYXQiOjE2NTI1NTMxOTIsImV4cCI6MTY1MjU1Njc5MiwiaXNzIjoibWF6Z2kgcHJvZHVjdGlvbiIsInJvbGUiOiJVU0VSIn0.ABpZrSVk-EVxYWp4RDZwLazKFWCFS95djY6GLRIJx7Y
+
+{
+  "email": "javlonpa1n@gmail.com"
+}
+
+### Change Password
+PUT http://localhost:8080/profile/public/change
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyNTM5ZDQzOS1lZmRlLTRhZmItOTkyNy1jOTliNGVhNGE3YzEiLCJpYXQiOjE2NTI1NTMxOTIsImV4cCI6MTY1MjU1Njc5MiwiaXNzIjoibWF6Z2kgcHJvZHVjdGlvbiIsInJvbGUiOiJVU0VSIn0.ABpZrSVk-EVxYWp4RDZwLazKFWCFS95djY6GLRIJx7Y
+
+{
+  "oldPassword" : "12345678",
+  "newPassword": "12345678"
+}
+
+### ADMIN Create
+POST http://localhost:8080/profile/adm
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyNTM5ZDQzOS1lZmRlLTRhZmItOTkyNy1jOTliNGVhNGE3YzEiLCJpYXQiOjE2NTI1NTQ5NTgsImV4cCI6MTY1MjU1ODU1OCwiaXNzIjoibWF6Z2kgcHJvZHVjdGlvbiIsInJvbGUiOiJBRE1JTiJ9.NpAcF3i1qHxYm9RaC4wN7Jpp-nG3YzajJWAYVNHHoWg
+
+{
+  "name" : "12345678",
+  "surname" : "12345678",
+  "email" : "qwe@qwe",
+  "password" : "12345678",
+  "role": "ADMIN"
+}
+
+### ADMIN List
+GET http://localhost:8080/profile/adm
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyNTM5ZDQzOS1lZmRlLTRhZmItOTkyNy1jOTliNGVhNGE3YzEiLCJpYXQiOjE2NTI1NTQ5NTgsImV4cCI6MTY1MjU1ODU1OCwiaXNzIjoibWF6Z2kgcHJvZHVjdGlvbiIsInJvbGUiOiJBRE1JTiJ9.NpAcF3i1qHxYm9RaC4wN7Jpp-nG3YzajJWAYVNHHoWg
+
+### ADMIN Delete
+DELETE http://localhost:8080/profile/adm/23ce2734-564c-46e5-bd16-1f702aaac0e7/delete
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyNTM5ZDQzOS1lZmRlLTRhZmItOTkyNy1jOTliNGVhNGE3YzEiLCJpYXQiOjE2NTI1NTQ5NTgsImV4cCI6MTY1MjU1ODU1OCwiaXNzIjoibWF6Z2kgcHJvZHVjdGlvbiIsInJvbGUiOiJBRE1JTiJ9.NpAcF3i1qHxYm9RaC4wN7Jpp-nG3YzajJWAYVNHHoWg
+
+

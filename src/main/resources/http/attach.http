@@ -1,0 +1,23 @@
+### Upload
+POST http://localhost:8080/attach/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="download.png"
+
+< C:\Users\BigMan\Desktop\1231\download.png
+--WebAppBoundary--
+
+### Open
+GET http://localhost:8080/attach/open/15072b34-9bf9-4e5d-935f-99b961e5ed3b
+
+### Download
+GET http://localhost:8080/attach/download/15072b34-9bf9-4e5d-935f-99b961e5ed3b
+
+### Show all
+GET http://localhost:8080/attach/adm
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyNTM5ZDQzOS1lZmRlLTRhZmItOTkyNy1jOTliNGVhNGE3YzEiLCJpYXQiOjE2NTI4NzI5OTcsImV4cCI6MTY1Mjg3NjU5NywiaXNzIjoibWF6Z2kgcHJvZHVjdGlvbiIsInJvbGUiOiJBRE1JTiJ9.Zx2EwTKpz7tBGhq_-nz747Z8S2zMsX0tnQpxHonB_Nc
+
+### Delete
+DELETE http://localhost:8080/attach/adm/15072b34-9bf9-4e5d-935f-99b961e5ed3b
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyNTM5ZDQzOS1lZmRlLTRhZmItOTkyNy1jOTliNGVhNGE3YzEiLCJpYXQiOjE2NTI4NzI5OTcsImV4cCI6MTY1Mjg3NjU5NywiaXNzIjoibWF6Z2kgcHJvZHVjdGlvbiIsInJvbGUiOiJBRE1JTiJ9.Zx2EwTKpz7tBGhq_-nz747Z8S2zMsX0tnQpxHonB_Nc

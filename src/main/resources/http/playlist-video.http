@@ -1,0 +1,35 @@
+### Get
+GET http://localhost:8080/playlist-video/05362699-43ed-42bd-9100-b63b2b8f0a2d
+
+### Create
+POST http://localhost:8080/playlist-video/public
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyNTM5ZDQzOS1lZmRlLTRhZmItOTkyNy1jOTliNGVhNGE3YzEiLCJpYXQiOjE2NTI4ODAxNjQsImV4cCI6MTY1Mjg4Mzc2NCwiaXNzIjoibWF6Z2kgcHJvZHVjdGlvbiIsInJvbGUiOiJBRE1JTiJ9.X3_ZtysG-mihZCCRvVNWLsNQNfY-t3ycye7LAxHLmu8
+
+{
+  "videoId": "6d5fe8a3-6474-4bf4-ba36-10f777fe2a72",
+  "playlistId": "d2141750-a9d4-42d4-9532-f60e7d489e21",
+  "orderNum": 1
+}
+
+### Update
+PUT http://localhost:8080/playlist-video/public/05362699-43ed-42bd-9100-b63b2b8f0a2d
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyNTM5ZDQzOS1lZmRlLTRhZmItOTkyNy1jOTliNGVhNGE3YzEiLCJpYXQiOjE2NTI4ODAxNjQsImV4cCI6MTY1Mjg4Mzc2NCwiaXNzIjoibWF6Z2kgcHJvZHVjdGlvbiIsInJvbGUiOiJBRE1JTiJ9.X3_ZtysG-mihZCCRvVNWLsNQNfY-t3ycye7LAxHLmu8
+
+{
+  "orderNum": 2
+}
+
+### Videos By Playlist
+GET http://localhost:8080/playlist-video/list/d2141750-a9d4-42d4-9532-f60e7d489e21
+
+### Delete
+DELETE http://localhost:8080/playlist-video/public/delete
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyNTM5ZDQzOS1lZmRlLTRhZmItOTkyNy1jOTliNGVhNGE3YzEiLCJpYXQiOjE2NTI4ODAxNjQsImV4cCI6MTY1Mjg4Mzc2NCwiaXNzIjoibWF6Z2kgcHJvZHVjdGlvbiIsInJvbGUiOiJBRE1JTiJ9.X3_ZtysG-mihZCCRvVNWLsNQNfY-t3ycye7LAxHLmu8
+
+{
+  "videoId": "6d5fe8a3-6474-4bf4-ba36-10f777fe2a72",
+  "playlistId": "d2141750-a9d4-42d4-9532-f60e7d489e21"
+}
